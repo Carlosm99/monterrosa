@@ -9,7 +9,7 @@ const Particles: React.FC = (props) => {
   const ref = useRef<ThreePoints>(null);
 
   const [sphere] = useState<Float32Array>(() => {
-    const positions = new Float32Array(5000 * 3);
+    const positions = new Float32Array(2000 * 3);
 
     for (let i = 0; i < 5000; i++) {
       const radius = Math.random() * 1.2;
@@ -53,7 +53,7 @@ const Particles: React.FC = (props) => {
 
 const ParticlesCanvas: React.FC = () => {
   return (
-    <div className="w-full h-auto absolute inset-0 z-[-1]">
+    <div className="w-full h-auto absolute inset-0 z-[-1] animate-fade-in">
       <Canvas camera={{ position: [0, 0, 1] }}>
         <Suspense fallback={null}>
           <Particles />
