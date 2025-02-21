@@ -9,7 +9,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
+        background: "bg-gradient-to-tl from-black via-zinc-600/5 to-black",
         foreground: "var(--foreground)",
       },
       fontFamily: {

@@ -5,7 +5,9 @@ export default function Home() {
   return (
     <main className="flex flex-col">
       <Hero />
+      <section id="about">
       <About />
+      </section>
     </main>
   );
 }
