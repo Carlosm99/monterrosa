@@ -14,7 +14,7 @@ const Hero = () => {
 
       <div className="mt-16 text-center animate-fade-in">
         <h2 className="text-[17px] text-zinc-500 ">
-          I'm building the technologies that empower businesses to grow and thrive.
+          I&apos;m building the technologies that empower businesses to grow and thrive.
         </h2>
       </div>
       <Scroll />
