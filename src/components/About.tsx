@@ -21,7 +21,7 @@ const About = () => {
   };
 
   return (
-    <div className="flex flex-col items-center mt-36">
+    <div className="flex flex-col items-center mt-24 md:mt-36">
       <motion.div
         variants={variants}
         initial="hidden"
