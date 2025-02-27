@@ -16,6 +16,7 @@ export default {
         display: ["var(--font-calsans)"],
       },
       animation: {
+				"schedule": "fade-in 5s ease-in-out forwards",
 		        "fade-in-scroll": "fade-in 4s ease-in-out forwards",
 				"fade-in": "fade-in 3s ease-in-out forwards",
 				"fade-left": "fade-left 3s ease-in-out forwards",
