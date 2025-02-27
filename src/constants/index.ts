@@ -1,9 +1,12 @@
+import { tecnm, composabel, crncy, feedmill } from "@/assets";
+
 export const experiences = [
     {
       title: "Frontend Engineer (Remote)",
       company_name: "Composable Corp.",
       location: "Texas",
-      iconBg: "#383E56",
+      icon: composabel,
+      iconBg: "#FFFFFF",
       date: "Feb 2024 - Present",
       points: [
         "Designed and implemented a Web3 TypeScript SDK (software development kit) providing seamless integration with the StakeUp Protocol, simplifying interaction with blockchain-based smart contracts.",
@@ -15,7 +18,8 @@ export const experiences = [
       title: "Sr Software Developer (Office)",
       company_name: "CRNCY Group",
       location: "Belize",
-      iconBg: "#E6DEDD",
+      icon: crncy,
+      iconBg: "#FFFFFF",
       date: "July 2022 - Feb 2024",
       points: [
         "Led the development of a website for debit card payments using React.js and Node.js to build an API proxy to interact with the payment processor gateway.",
@@ -28,7 +32,8 @@ export const experiences = [
       title: "Full Stack Developer (Office)",
       company_name: "Reimer's Feed Mill",
       location: "Belize",
-      iconBg: "#383E56",
+      icon: feedmill,
+      iconBg: "#FFFFFF",
       date: "Feb 2022 - June 2022",
       points: [
         "Contributed to the client-side development of a dynamic eCommerce platform using React.js, enhancing user experience and responsiveness.",
@@ -39,7 +44,8 @@ export const experiences = [
       title: "Software Engineer (Office)",
       company_name: "Internship",
       location: "Mexico",
-      iconBg: "#E6DEDD",
+      icon: tecnm,
+      iconBg: "#FFFFFF",
       date: "Sept 2021 - Dec 2021",
       points: [
         "Designed and coded of artificial neural network with Python for automating the process of identifying information system vulnerabilities at the Macro-company level.",
