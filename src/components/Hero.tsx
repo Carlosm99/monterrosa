@@ -8,7 +8,6 @@ const Hero = () => {
 
       <a
         href="https://cal.com/carlos-monterrosa-pjvcr9"
-        target="_blank"
         rel="noopener noreferrer"
         className="flex items-center justify-center gap-2 bg-opacity-20 backdrop-blur-sm bg-green-800 border border-green-900 rounded-full p-1 mb-28 animate-schedule"
       >

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import {  Inter } from "next/font/google";
-import localFont from 'next/font/local'
+import { Inter } from "next/font/google";
+import localFont from "next/font/local";
+import { Toaster } from "react-hot-toast";
 import "./globals.css";
 
 const inter = Inter({
@@ -14,12 +15,11 @@ const calSans = localFont({
 });
 
 export const metadata: Metadata = {
-  title:{ default: "Carlos Monterrosa", template: "%s | Carlos Monterrosa"},
+  title: { default: "Carlos Monterrosa", template: "%s | Carlos Monterrosa" },
   description: "Software developer",
   openGraph: {
     title: "Carlos Monterrosa",
-    description:
-      "Software developer",
+    description: "Software developer",
     siteName: "carlos monterrosa",
     url: "https://monterrosa.vercel.app",
     images: [
@@ -48,10 +48,28 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
-      <body
-        className="bg-black"
-      >
+      <body className="bg-black">
         {children}
+        <Toaster
+          position="top-center"
+          toastOptions={{
+            duration: 2000,
+            style: {
+              background: "#151515",
+              color: "#fff",
+              border: "1px solid rgba(255, 255, 255, 0.1)",
+              borderRadius: "0.75rem",
+              padding: "0.75rem",
+              fontSize: "0.875rem",
+            },
+            success: {
+              iconTheme: {
+                primary: "#333333",
+                secondary: "#FFFFFF",
+              },
+            },
+          }}
+        />
       </body>
     </html>
   );
