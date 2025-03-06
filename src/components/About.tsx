@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import SocialLinks from "./SocialLinks";
+import MicroController from "./Chip";
 
 const About = () => {
   const variants = {
@@ -33,7 +34,7 @@ const About = () => {
         </p>
       </motion.div>
       <SocialLinks />
-
+      <MicroController />
       <motion.p
         className="text-white/60 max-w-3xl px-6 md:px-0 md:text-center leading-[30px] mt-8"
         initial={{ y: 30, opacity: 0 }}
